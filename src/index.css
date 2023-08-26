@@ -1,0 +1,99 @@
+/* Colors */
+:root {
+  --background: #f5f5f5;
+  --card-bg: #a9c0eb;
+  --text: #333;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  min-height: 400px;
+  min-width: 300px;
+}
+/*save edited list btn and add button*/
+.button-add,
+.sv-btn {
+  background-color: gainsboro;
+}
+
+.button-add:hover {
+  background-color: rgb(129, 135, 138);
+}
+.sv-btn:hover {
+  background-color: rgb(129, 135, 138);
+}
+/* Header */
+.card h1 {
+  color: var(--text);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form */
+.form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Todo List */
+.todos {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+/*edit button*/
+.edit-button {
+  margin-top: "5px";
+  margin-bottom: "5px";
+  margin-right: "5px";
+  margin-left: "15px";
+  background-color: lightgreen;
+}
+/*delete button style*/
+.delete-button {
+  margin-top: "5px";
+  margin-bottom: "5px";
+  background-color: rgb(245, 106, 106);
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .form,
+  .todos li {
+    flex-direction: column;
+  }
+}
